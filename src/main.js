@@ -18,6 +18,7 @@ $(document).ready(function () {
       console.log(response);
       console.log(gifResponse);
       getElements(response);
+      getGifElements(gifResponse);
     })();
 
     function getElements(response) {
@@ -30,9 +31,9 @@ $(document).ready(function () {
 
     function getGifElements(gifResponse) {
       if (gifResponse) {
-        $('.showGif').html(`<img src="${gifResponse.data[0].embed_url}" alt="random image of someone groaning>`)
+        $('.showGif').html(`<img src="${gifResponse.data[0].images.original.url}" alt="groaning gif">`)
       } else {
-        $('showGif').text("Sorry, we could not get a gif.");
+        $('.showGif').text("Sorry, that joke was so bad you don't get a gif.");
       }
     }
   });
