@@ -23,17 +23,19 @@ $(document).ready(function () {
 
     function getElements(response) {
       if (response) {
-        $('.showJoke').text(`${response.joke}`);
+        $('#showJoke').fadeIn(600);
+        $('#showJoke').html(`<p>${response.joke}</p>`);
       } else {
-        $('.showJoke').text("Sorry, we could not get your joke. You probably wouldn't get it anyway.");
+        $('#showJoke').html("Sorry, we could not get your joke. You probably wouldn't get it anyway.");
       }
     }
 
     function getGifElements(gifResponse) {
       if (gifResponse) {
-        $('.showGif').html(`<img src="${gifResponse}" alt="groaning gif">`);
+        $('#showGif').fadeIn(600);
+        $('#showGif').html(`<img src="${gifResponse}" alt="groaning gif">`);
       } else {
-        $('.showGif').text("Sorry, that joke was so bad you don't get a gif.");
+        $('#showGif').text("Sorry, that joke was so bad you don't get a gif.");
       }
     }
   });

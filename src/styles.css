@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 body {
-  background-color: lightgray;
+  background-image: url("../img/living-room.jpg");
+  /* background-color: lightgray; */
+  font-family: 'Monoton', cursive;
+  word-spacing: 2em;
+}
+
+.button {
+  margin: 30px;
+}
+
+.jumbotron {
+  margin-top: 25px;
+}
+
+#showJoke {
+  display: none;
+  font-family: 'Nova Square', cursive;
+  background-color: rgba(212, 142, 28, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+  border: 2px solid #9BC53D;
+}
+p {
+  color: #2E2E3A;
+  word-spacing: normal;
+}
+
+#showGif {
+  display: none;
+  margin: 20px;
 }
