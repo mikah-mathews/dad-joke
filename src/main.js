@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     function getGifElements(gifResponse) {
       if (gifResponse) {
-        $('.showGif').html(`<img src="${gifResponse.data[0].images.original.url}" alt="groaning gif">`)
+        $('.showGif').html(`<img src="${gifResponse}" alt="groaning gif">`);
       } else {
         $('.showGif').text("Sorry, that joke was so bad you don't get a gif.");
       }
